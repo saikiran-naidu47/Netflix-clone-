@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Roboto;
+    outline: none;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+button,
+select {
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+option {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    font-size: 18px;
+    padding: 16px 10px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 350px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: solid 1px rgb(110 142 188 / 100%);
+    border-radius: 5px;
+    background-color: rgb(110 142 188 / 30%);
+}
+
+select {
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+nav .btn {
+    font-size: 15px;
+    padding: 7px 12px;
+    background-color: red;
+    border-radius: 5px;
+    border: 0;
+}
+
+section,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: black;
+    width: 90%;
+    max-width: 1080px;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+/* video inside image starts here */
+section .img-vid {
+    position: relative;
+    width: 100%;
+}
+
+section .img-vid img {
+    position: relative;
+    z-index: 10;
+    max-width: 650px;
+}
+
+.video-container1 {
+    z-index: 9;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 74%;
+    max-height: 55%;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+}
+
+.video-container2 {
+    z-index: 9;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 65%;
+    max-height: 55%;
+    position: absolute;
+    top: 9%;
+    left: 17%;
+}
+
+.video-container2 video {
+    max-width: 410px;
+}
+
+/* Video inside image code ends here */
+
+.logo {
+    width: 7.5rem;
+}
+
+.main {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) 99%), url("https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/19fc1a4c-82db-4481-ad08-3a1dffbb8c39/IN-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_24a485f6-1820-42be-9b60-1b066f1eb869_medium.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main section {
+    background-color: transparent;
+    min-height: 70vh;
+}
+
+.section-content:not(.main .section-content) {
+    margin-bottom: 30px;
+}
+
+.get-started-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.get-started-btn {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 16px 10px;
+    border: solid 1px red;
+    border-radius: 5px;
+    background-color: red;
+    width: 170px;
+}
+
+.bg-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.stranger-box {
+    text-align: center;
+}
+
+.stranger-box img {
+    max-width: 650px;
+}
+
+.downloading-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 11px 13px;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    border-radius: 10px;
+    position: relative;
+    top: -60px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.downloading-container img {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.downloading-container .content {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 25px;
+}
+
+.dow-text {
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.downloader {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif");
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+}
+
+.faq ul {
+    width: 100%;
+    margin: 40px 0 20px;
+    text-align: left;
+}
+
+.faq ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    font-size: 22px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.faq ul li:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+footer {
+    align-items: flex-start;
+    min-height: auto;
+}
+
+footer a,
+footer p {
+    color: rgb(150, 150, 150);
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-links-container li {
+    font-size: 18px;
+    width: 50%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer-website-name {
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.separation {
+    background-color: rgb(35, 35, 35);
+    height: 10px;
+    width: 100%;
+}
+
+/* Styling Go to Top Button */
+/* .go-to-top {
+    position: fixed;
+    top: 88%;
+    right: -20px;
+    z-index: 20;
+} */
+
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    display: none;
+}
+
+.go-to-top a {
+    text-decoration: none;
+    display: inline-block;
+    background: red;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 26px 32px;
+    }
+
+    .main {
+        background-attachment: fixed;
+    }
+
+    .logo {
+        width: 145px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 42px;
+    }
+
+    p {
+        font-size: 23px;
+        margin-top: 16px;
+    }
+
+    .footer-links-container li {
+        font-size: 12px;
+        width: 25%;
+        margin-top: 18px;
+    }
+
+    .go-to-top {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    .first,
+    .third {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        max-width: 1080px;
+    }
+
+    .second,
+    .fourth {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+        max-width: 1080px;
+    }
+
+    .section-content {
+        margin: 0 15px;
+    }
+
+    img {
+        max-width: 500px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 25px;
+        margin-top: 16px;
+    }
+
+    section .section-content {
+        width: 50%;
+    }
+
+    section .stranger-box {
+        width: 50%;
+    }
+
+    section .img-vid {
+        width: 50%;
+    }
+
+    .main section {
+        min-height: 100vh;
+    }
+
+    section {
+        min-height: 80vh;
+    }
+
+    .main {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) 99%), url("https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/19fc1a4c-82db-4481-ad08-3a1dffbb8c39/IN-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_24a485f6-1820-42be-9b60-1b066f1eb869_medium.jpg");
+    }
+
+    .main section div {
+        width: 100%;
+    }
+
+    .section-content:not(.main .section-content) {
+        margin-bottom: 0;
+    }
+
+    .downloading-container {
+        height: 100px;
+    }
+
+    .downloading-container img {
+        width: 55px;
+    }
+}
+
+.autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+.blurin {
+    animation: blurin 0.5s ease-in-out 0s 1;
+}
+
+@keyframes autoShowAnimation {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes blurin {
+    0% {
+        filter: blur(100px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
